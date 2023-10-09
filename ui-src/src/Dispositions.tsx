@@ -2,7 +2,7 @@ import React from 'react';
 import * as Flex from '@twilio/flex-ui';
 import { FlexPlugin } from '@twilio/flex-plugin';
 
-import CustomizePasteElements from './utils/PasteThemeProvider';
+// import CustomizePasteElements from './utils/PasteThemeProvider';
 import { setDispositionBeforeCompleteTask } from './flex-hooks/actions/CompleteTask';
 import { addDispositionTab } from './flex-hooks/components/TaskCanvasTabs';
 import Dispositions from './flex-hooks/notifications/DispositionNotification';
@@ -28,7 +28,7 @@ export default class Disposition extends FlexPlugin {
       addDispositionTab,
       Dispositions,
       DispositionString,
-      CustomizePasteElements,
+      // CustomizePasteElements,
     ];
 
     initializers.forEach((initializer) => initializer(flex, manager));
